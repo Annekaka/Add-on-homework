@@ -1,0 +1,13 @@
+:root {
+  --main-font: Poppins;
+  --dark-purple: #462cb2;
+  --dark: #272044;
+  --light: #fff;
+}
+
+h1 {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 144px;
+}
