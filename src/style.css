@@ -31,6 +31,11 @@ body {
   gap: 64px;
   margin: 100px 150px;
 }
+.cafe-section {
+  background-color: var(--background-color);
+  text-align: center;
+  padding: 50px 0 20px;
+}
 
 .card-container {
   display: grid;
@@ -38,6 +43,15 @@ body {
   gap: 30px;
   margin: 100px 150px;
   background-color: var(--background-color);
+  text-align: left;
+}
+.card-body {
+  padding: 15px;
+  background-color: var(--light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 5px;
 }
 /* Elements */
 .hero button {
@@ -56,9 +70,30 @@ body {
   height: 461px;
   object-fit: cover;
 }
+.card {
+  background-color: var(--light);
+  box-shadow: 20px 20px 40px 0px #c6c6c633;
+  height: 698px;
+}
+.card-banner {
+  display: flex;
+}
 .card-banner img {
   aspect-ratio: 1 / 1;
   width: 185px;
+}
+
+.card button {
+  display: block;
+  margin: 5px auto;
+  background-color: var(--dark-purple);
+  color: var(--light);
+  font-size: 14px;
+  line-height: 21px;
+  padding: 16px 32px;
+  width: 306px;
+  font-weight: 700;
+  border: none;
 }
 
 /* Typography */
@@ -94,4 +129,19 @@ p {
   letter-spacing: 5px;
   color: var(--dark);
   opacity: 30%;
+}
+h4 {
+  font-size: 24px;
+  line-height: 36px;
+}
+.card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+.card .mini-titels {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 19.5px;
 }
