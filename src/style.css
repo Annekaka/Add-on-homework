@@ -3,11 +3,95 @@
   --dark-purple: #462cb2;
   --dark: #272044;
   --light: #fff;
+  --background-color: #f8f8f8;
+}
+/* Sections */
+body {
+  margin: 0;
 }
 
-h1 {
+.hero {
+  text-align: center;
+  color: var(--light);
+  height: 900px;
+  margin: 0 auto;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.59),
+      rgba(39, 32, 68, 0.59)
+    ),
+    url("/img/background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.why-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 64px;
+  margin: 100px 150px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 100px 150px;
+  background-color: var(--background-color);
+}
+/* Elements */
+.hero button {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--dark);
+  background-color: var(--light);
   font-family: var(--main-font);
   font-weight: 700;
+  padding: 16px 32px;
+  border: none;
+}
+
+.why-photo {
+  width: 570px;
+  height: 461px;
+  object-fit: cover;
+}
+.card-banner img {
+  aspect-ratio: 1 / 1;
+  width: 185px;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+p {
+  font-family: var(--main-font);
+  font-weight: 700;
+  margin: 0 0 15px;
+}
+
+.hero h1 {
   font-size: 96px;
   line-height: 144px;
+}
+
+.why-section h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.why-section p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.sub-heading {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 5px;
+  color: var(--dark);
+  opacity: 30%;
 }
