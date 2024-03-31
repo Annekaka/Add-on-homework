@@ -13,8 +13,10 @@ body {
 .hero {
   text-align: center;
   color: var(--light);
-  height: 900px;
+  min-height: 500px;
+  max-height: 900px;
   margin: 0 auto;
+  padding: 286px auto;
   background-image: linear-gradient(
       rgba(39, 32, 68, 0.59),
       rgba(39, 32, 68, 0.59)
@@ -41,7 +43,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 30px;
-  margin: 100px 150px;
+  margin: 50px 150px;
   background-color: var(--background-color);
   text-align: left;
 }
@@ -53,6 +55,33 @@ body {
   justify-content: space-between;
   gap: 5px;
 }
+.gallery-section {
+  padding: 70px 0;
+  text-align: center;
+}
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 30px;
+  margin: 20px 120px;
+}
+footer {
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr;
+  gap: 64px;
+  background-image: linear-gradient(
+      rgba(39, 32, 68, 0.9),
+      rgba(39, 32, 68, 0.9)
+    ),
+    url("/img/footer.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: var(--light);
+  font-family: var(--main-font);
+  padding: 100px 100px;
+}
 /* Elements */
 .hero button {
   font-size: 14px;
@@ -63,6 +92,7 @@ body {
   font-weight: 700;
   padding: 16px 32px;
   border: none;
+  margin: 10px;
 }
 
 .why-photo {
@@ -95,7 +125,22 @@ body {
   font-weight: 700;
   border: none;
 }
+.img-gallery {
+  aspect-ratio: 1 / 1;
+  max-width: 370px;
+  object-fit: cover;
+  grid-column: span 2;
+}
 
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  opacity: 0.7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
 /* Typography */
 h1,
 h2,
@@ -111,7 +156,6 @@ p {
   font-size: 96px;
   line-height: 144px;
 }
-
 .why-section h2 {
   font-size: 40px;
   line-height: 50px;
@@ -130,6 +174,10 @@ p {
   color: var(--dark);
   opacity: 30%;
 }
+.section-heading {
+  font-size: 48px;
+  line-height: 72px;
+}
 h4 {
   font-size: 24px;
   line-height: 36px;
@@ -144,4 +192,15 @@ h4 {
   font-weight: 700;
   font-size: 13px;
   line-height: 19.5px;
+}
+footer h4 {
+  font-size: 20px;
+  line-height: 30px;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+  font-weight: 400;
 }
